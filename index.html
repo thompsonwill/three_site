@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <!-- Just head -->
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+
+    <script>
+
+    </script>
+
+    <script src="https://crescosa.com/assets/jquery/jquery-3.3.1.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/2.0.1/TweenMax.min.js"></script>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T"
+        crossorigin="anonymous">
+
+    <link rel="stylesheet" type="text/css" href="./assets/style/style.css">
+    <link rel="stylesheet" type="text/css" href="./assets/style/fullpage.css">
+    <!-- Three js scripts -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/three.js/103/three.js"></script>
+
+
+    <title>Three JS Test</title>
+    <style>
+    </style>
+    <meta name="description" content="" />
+    <meta name="keywords" content="">
+</head>
+
+
+
+<body>
+
+    <div class="renderContainer">
+
+        <div id="bg-block">
+        </div>
+    </div>
+
+    <div id="fullpage">
+<h1>What is here</h1>
+        <div class="section">
+            <div class="container">
+                <h1>Hello section 1.</h1>
+            </div>
+        </div>
+
+        <div class="section">
+            <div class="container">
+                <h1>This is section 2.</h1>
+            </div>
+        </div>
+
+        <div class="section">
+            <div class="container">
+                <h1>Hello section 3.</h1>
+            </div>
+        </div>
+
+        <div class="section">
+            <div class="container">
+                <h1>This won't show up.</h1>
+            </div>
+        </div>
+
+        <div class="section">
+                <div class="container">
+                    <h1>Will it.</h1>
+                </div>
+            </div>
+
+    </div>
+
+
+
+
+    <script src="./assets/js/app.js"></script>
+    <script src="./assets/js/fullpage.js"></script>
+    <script>
+
+        // Fullpage
+        new fullpage('#fullpage', {
+            //options here
+            autoScrolling: true,
+            scrollHorizontally: true
+        });
+
+        //methods
+        fullpage_api.setAllowScrolling(true);
+    </script>
+</body>
+
+</html>

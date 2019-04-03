@@ -1,0 +1,19 @@
+.renderContainer {
+    height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+
+  canvas{
+      /* margin-top: 35vh; */
+  }
+  
+ #bg-block {
+    position: fixed;
+  }
+
+  body{
+      background-color: #333333;
+      color: #ffffff;
+  }
