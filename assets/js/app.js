@@ -26,8 +26,9 @@
     var cube = new THREE.Mesh(geometry, material);
 
 // Make the Die
-    var geo2 = new THREE.DodecahedronBufferGeometry(1, 0);
-    var mat2 = new THREE.MeshStandardMaterial({ color: 0x00ff00})
+   // var geo2 = new THREE.DodecahedronBufferGeometry(1, 0);
+   var geo2 = new THREE.IcosahedronGeometry(1, 0);
+    var mat2 = new THREE.MeshStandardMaterial({ color: 0x00ff00, wireframe: true})
     var die = new THREE.Mesh(geo2, mat2);
     die.castShadow = true;
     scene.add(die);
